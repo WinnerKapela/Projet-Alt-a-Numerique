@@ -206,7 +206,12 @@ nav ul li#contact:hover{
    margin-top: 25px;
    margin-bottom: 25px;
 }
-
+.cta-container{
+  display: flex;
+  margin: inherit auto;
+  justify-content: center;
+  align-items: center;
+}
 #filiales{
     width: 90%;
     display: flex;
