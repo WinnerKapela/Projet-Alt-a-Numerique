@@ -1,3 +1,18 @@
+ $(document).ready(function(){
+    $('#btn-menu').click(()=>{
+      $('nav ul').show(50)
+      $('#btn-menu').hide()
+      $('.bg-bars').show(50)
+      $('body').css({'overflow-y':'hidden'})
+    })
+     $('#btn-menu-close').click(()=>{
+      $('nav ul').hide(50)
+      $('#btn-menu').show()
+      $('.bg-bars').hide(50)
+      $('body').css({'overflow-y':'auto'})
+    })
+  })
+ 
  window.addEventListener("load",()=>{
          const loader = document.getElementById('loader-bg')
         const content = document.getElementById('content')
@@ -7,6 +22,7 @@
     }
        
     )
+
 
 const swipe = new Swiper(".mySwiper", {
       
@@ -98,4 +114,16 @@ const swipe = new Swiper(".mySwiper", {
         spaceBetween: 20
       }
     }
+  });
+
+  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
   });

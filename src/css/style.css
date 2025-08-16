@@ -1,4 +1,4 @@
-body{font-family: 'Ubuntu'; box-sizing: border-box !important; font-size: 17px; color: #000000b0;}
+body{font-family: 'Ubuntu'; box-sizing: border-box !important; font-size: 17px; color: #000000b0; border: 2px solid red;}
 h2,h3,h4{color: #000000d7; position: relative;padding-bottom: 12px;}
 .borderLine{
    background-color: #12b300;
@@ -90,7 +90,7 @@ nav ul li#contact:hover{
 } 
 .background-container .containe{   
     height: 600px;
-    background-color: rgba(21, 21, 26, 0.772);
+    background-color: rgba(21, 21, 26, 0.498);
     margin: auto 0px !important;
 }
 .section-caption{
@@ -156,6 +156,7 @@ nav ul li#contact:hover{
 }
 #apropos{
     width: 90%;
+     background-color: #f4f4f4;
     display: flex;
    justify-content: center;
    align-items: center;
@@ -213,13 +214,13 @@ a.cta-more:hover{
 }
 #filiales{
     width: 90%;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px auto;
     padding: 15px 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.126);
-    border-radius: 10px;
+    border-top: 3px solid rgba(0, 0, 0, 0.158) !important;
 }
 #filiales .titre-filiale{
     margin-bottom: 30px;
@@ -265,22 +266,32 @@ a.cta-more:hover{
 }
 #realisations{
   margin-top: 100px;
-  background-color: #2b2b2b13;
+  background-color: #f4f4f4;
   padding: 20px;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px auto;
-  border-radius: 10px;
+  border-top: 3px solid rgba(0, 0, 0, 0.158) !important;
 }
-#realisations img{
+#realisations h3{
+  margin-bottom: 10px;
+}
+#realisations .realisation-desc{
+  margin: 20px auto;
+}
+#realisations .altea-code{
+ 
+  padding: 25px;
+}
+#realisations .altea-code img{
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.347);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto a;
+  margin: auto 10px;
   width: 100%;
 }
 #realisations li{
@@ -303,6 +314,45 @@ a.cta-more:hover{
 #realisations li:hover{
  background-color: #2b2b2be5;
  transform: scale(1.03);
+}
+#realisations .altea-code{
+    background-color: #2b2b2b0b;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#realisations .altea-numerique{
+  background-color: #4acb883d;
+    border-radius: 10px;
+    padding: 25px;
+}
+#realisations .altea-numerique img{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  transform:rotate(15deg) ;
+  transition: all .3s ease-in-out;
+}
+#realisations .altea-numerique img:hover{
+  transform:rotate(0deg) ;
+}
+#realisations .altea-numerique-content{
+  margin-top: 25px;
+}
+#realisations .cta-altNum{
+  margin: 25px auto;
+}
+#realisations .cta-altNum a{
+  background-color: rgb(72, 190, 72);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: all .3s ease-in;
+}
+#realisations .cta-altNum a:hover{
+  background-color: rgb(58, 152, 58);
 }
 /*--------------------------------------------------------------
 # Testimonials
@@ -540,11 +590,16 @@ nav ul li .contact:hover{
 }
 }
 @media (max-width:992px) {
-body{font-size: 17px;}
+body{
+  font-size: 17px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 header{height: 80px; background-color: #f6f6f6;}
 
 .navbar-brand img{width: 90px;}
-h2{font-size: 1.3em;}
+h2,h3{font-size: 1.3em;}
 .background-container .containe{   
     height: 500px;
     margin: auto 0px !important;
@@ -573,13 +628,20 @@ h2{font-size: 1.3em;}
     padding: 20px !important;
    margin-left: 0%;
 }
-#secteurs, #apropos, #filiales, .testimonials, #equipe{
-     margin: 30px auto;
+#secteurs, #apropos, #filiales, .testimonials, #equipe,#realisation{
+     margin: 70px auto;
 }
 #secteurs .secteurs-item{
     padding: 1.5%;
     margin-left: 1%;
     width: 100%;    
+}
+div .cta-more{
+  display: flex;
+ margin: 20px auto;
+ justify-content: center;
+ text-align: center;
+ width: 230px;
 }
 #valeur-ajoutee .container .vl-ajoutee{
    box-shadow: none;
@@ -600,7 +662,7 @@ h2{font-size: 1.3em;}
     font-size: 14px;
 }
 #realisations{
-  width: 100%;
+  width: 95%;
   padding: 0px !important;
 }
 #realisations ul a{
