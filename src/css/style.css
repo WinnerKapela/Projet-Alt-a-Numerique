@@ -88,6 +88,12 @@ nav ul li#contact:hover{
     background-size: cover;
     background-attachment: fixed;   
 } 
+.background-container.contact{
+    background-image: url("../img/illustration-telephone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+} 
 .background-container .containe{   
     height: 600px;
     background-color: rgba(21, 21, 26, 0.498);
@@ -135,6 +141,18 @@ nav ul li#contact:hover{
 }
 .secteurs-item:hover{
     transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 4px 8px #12b30061 !important;
+    border-top: 4px solid #12b300;
+    animation: liner .3s ease-in-out;
+}
+@keyframes liner {
+  0%{
+    box-shadow: 0 4px 8px #00925c;
+  }
+  100%{
+     box-shadow: 0 4px 8px #00925c;
+  }
 }
 .secteurs-item i{
    transition: transform 0.5s ease;
@@ -184,7 +202,7 @@ a.cta-more:hover{
   background-color: rgba(21, 21, 26, 0.772);
 }
 #valeur-ajoutee{
-    background-image: url("../img/bg-fille-tech.jpg");
+    background-image: url("../img/bg-digital-blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -308,7 +326,7 @@ a.cta-more:hover{
  color: #12b300;
  font-weight: 500;
 }
-#realisations p:hover{
+#realisations .altea-code-desc p:hover{
  background-color: #2b2b2be5;
  transform: scale(1.03);
 }
@@ -468,6 +486,18 @@ a.cta-more:hover{
 #equipe .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #3e3e3e;
 }
+
+/*----------------Contact page-----------*/
+form{margin: 10vh auto; padding: 30px; background-color: #fff;border-radius: 10px; box-shadow: 0px 1px 10px 0px #aaaaaa;}
+form #btn-contact-close{position: absolute;top: 10px;right: 20px;z-index: 10;background-color: #ebebeb;color: #151515; border: none; outline: none; border-radius: 50%; width: 40px;height: 40px;}
+form h2{margin-top: 20px;}
+form .media {margin:-10px 0px 50px 0;}
+form .media i{font-size: 2em; color: #fff; background-color: #2b2a2a; padding: 5px;margin: 0 5px; border-radius: 50px;}
+form .media .tel{color: #131313; font-size: 1.1em;}
+form textarea{width: 100% !important; resize: none;} 
+form button{padding: 10px 0px !important;}
+form input,form textarea{padding: 20px !important; border-radius: 8px !important;}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -577,7 +607,7 @@ a.cta-more:hover{
   #btn-menu{display: block; float: right;position: absolute;right: 30px;top: 25px;outline: none;border: none;z-index: 999;}
   #btn-menu-close{display: block; float: right;position: absolute;right: 20px;top: 20px;z-index: 1000;outline: none;border: none;}
   .bg-bars{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 900;background-color: #11111150;display: none;}
-  nav ul{z-index: 1000; display: none; position: fixed;top: -10px;right: 5px; width: 300px; height: 400px; border-radius: 10px; background-color: #fff;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);padding: 60px 15px 15px 15px;}
+  nav ul{z-index: 1000; display: block; position: fixed;top: -10px;right: -1000px; width: 300px; height: 400px; border-radius: 10px; background-color: #fff;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);padding: 60px 15px 15px 15px; transition: all .2s ease-in-out;}
   nav ul li{display: flex;}
   nav ul li a{width: 300px;}
   nav ul li .contact{

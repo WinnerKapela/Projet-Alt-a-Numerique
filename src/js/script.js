@@ -1,17 +1,23 @@
- $(document).ready(function(){
+  $(document).ready(function(){
     $('#btn-menu').click(()=>{
-      $('nav ul').show(50)
+      $('nav ul').css({"right":"5px"})
       $('#btn-menu').hide()
       $('.bg-bars').show(50)
       $('body').css({'overflow-y':'hidden'})
     })
-     $('#btn-menu-close').click(()=>{
-      $('nav ul').hide(50)
+    $('.bg-bars').click(()=>{
+       $('nav ul').css({"right":"-1000px"})
       $('#btn-menu').show()
       $('.bg-bars').hide(50)
       $('body').css({'overflow-y':'auto'})
     })
-  })
+     $('#btn-menu-close').click(()=>{
+      $('nav ul').css({"right":"-1000px"})
+      $('#btn-menu').show()
+      $('.bg-bars').hide(50)
+      $('body').css({'overflow-y':'auto'})
+    })
+      })
  
  window.addEventListener("load",()=>{
          const loader = document.getElementById('loader-bg')
