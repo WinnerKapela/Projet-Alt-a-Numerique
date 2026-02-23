@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Altea Tech Group</title>
-   <link rel="shortcut icon" href="src/img/AlteaFavicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="src/bootstrap.min.css">
+  <link rel="shortcut icon" href="src/img/AlteaFavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/bootstrap.min.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/aos/aos.css">
   <link rel="stylesheet" href="src/boxicons/css/boxicons.min.css">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 </head>
-<body>
+<body >
   <div id="loader-bg">
     <div class="row">
       <div class="img-container">
@@ -36,13 +36,18 @@
             </button>
               <li class="active"><a href="#">Accueil</a></li> 
               <li><a href="#" class="">Nos Services <i class="caret"></i></a></li> 
-              <li class="dropdown"> 
-              <a href="apropos.html" class="dropdown-toggle" data-toggle="dropdown">A propos de nous</a> 
-              </li>
+              <li class="dropdown"><a href="apropos.html">A propos de nous</a></li>
               <li class="" id="contact"><a href="contact.html" class="btn btn-success contact">Contactez-nous</a></li> 
+
+              <button id="BtnMode" class="mode">
+          <i class="bx bx-sun"></i>
+          <i class="bx bx-moon"></i>
+          <i class="bx bx-caret-down"></i>
+      </button>
           </ul>
       </div> 
     </nav> 
+      
       <button type="button" class="btn btn-default" id="btn-menu">
         <i class="fa-solid fa-bars-staggered"></i>
       </button>
@@ -56,7 +61,7 @@
               <h2 class="">NOUS SOMMES ALTEA TECH GROUP.</h2>
               <h2 class="caption-2">NOUS OEUVRONS POUR TRANSFORMER L'AFRIQUE PAR L'INNOVATION TECHNOLOGIQUE.</h2>
               <h4 class="">Nous développons des solutions locales, durables et intelligentes en utilisant les nouvelles technologies.</h4>
-              <a href=""  class="btn btn-success cta-caption">Contactez-nous</a>
+              <a href="contact.html"  class="btn btn-success cta-caption">Contactez-nous <li class="bx bx-message"></li></a>
             </div>
           </div>
           
@@ -103,12 +108,12 @@
     </div>
     
   </section>
-  <section id="apropos" data-aos="fade-up">
+<section id="support-client" data-aos="fade-up">
     <div class="container-fluid">
       <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-10 col-md-offset-1">
         <h2 class="text-center">Qui sommes-nous ? <span class="borderLine"></span></h2>
-        <div class="col-md-5"><img src="src/img/fille-utilisant-la-technlogie.jpg" class="img-apropos img-responsive" alt="fille-utilisant-la-technlogie"></div>
+        <div class="col-md-5 col-xs-12"><img src="src/img/tech-tactile-illustration.jpg" class="img-apropos img-responsive" style="border-radius: 10px;" alt=""></div>
         <div class="col-md-6">
           Nous sommes Altéa Tech Group, la maison mère d'une innovation responsable.
           <p>Altéa Tech Group se positionne comme la socièté mère et le moteur central d'un écosystème technologique innovant et durable en Afrique.</p>
@@ -121,14 +126,15 @@
             
             Chaque filière fonctionne avec une autonomie opérationnelle tout en bénéficiant du soutien de la vision stratégique et des ressources centralisées d'Altéa Tech Group.
           </p>
-          <div class="cta-">
-            <a href="" class="btn btn-default cta-more">En savoir plus sur nous</a>
+          <div class="cta">
+            <a href="apropos.html" class="btn btn-default cta-more">En savoir plus sur nous</a>
           </div>
         </div>
       </div>
     </div>
     </div>
   </section>
+  
   <section id="valeur-ajoutee" class="py-5" data-aos="fade-up">
     <div class="container">
         <div class="col-md-6 col-md-offset-3 vl-ajoutee">
@@ -143,7 +149,7 @@
             <p>Nous privilégions l'impact social autant que la performance technologique, en plaçant l'utilisateur au coeur de chaque projet.</p>
             
             <div class="cta-container">
-                <a href=""  class="btn btn-success">Contactez-nous</a>
+                <a href="contact.html"  class="btn btn-success">Contactez-nous <li class="bx bx-message"></li></a>
             </div>
             
         </div>
@@ -169,7 +175,7 @@
                   </div>
               </div>
               <div class="cta-container col-md-12">
-                    <a href=""  class="btn btn-success">En savoir plus</a>
+                    <a href="#"  class="btn btn-success">Cliquer ici pour accéder à la page</a>
               </div>
       </div>
     </div>
@@ -177,7 +183,7 @@
   <section id="cta" class="bg-light py-5" data-aos="fade-up">
     <div class="container-fluid cta-content">
       <h3 class="col-md-7 col-md-offset-1">Choisir Altéa Tech Group, c'est opter pour une transformation digitale responsable, durable et porteuse d'espoir !</h3>
-      <a href="" class="btn btn-success col-xs-offset-4 col-sm-offset-5 col-md-0 col-md-offset-1">Contactez-nous</a>
+      <a href="contact.html" class="btn btn-success col-xs-offset-4 col-sm-offset-5 col-md-0 col-md-offset-1">Contactez-nous <li class="bx bx-message"></li></a>
     </div>
     </div>
   </section>
@@ -187,7 +193,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="">
-          <h2 class="text-center">Nos réalisations et projets innovants <span class="borderLine"></span></h2>
+          <h2 class="text-center titre-team">Nos réalisations et projets innovants <span class="borderLine"></span></h2>
             <div class="altea-code col-md-12 col-xs-12" data-aos="fade-right">
                   <h3 class="text-center">Altéa Code - Notre technologie d'identification intelligente</h3>
                   <div class="col-md-3 col-md-push-7 col-sm-4 col-sm-push-4 col-sm-offset-0 col-xs-7 col-xs-push-2">
@@ -206,7 +212,7 @@
                       <p><i class="bx bx-play"></i> Vitesse integrée <i class="bx bx-rocket"></i></p>
                       <p><i class="bx bx-play"></i> Adaptation à l'environnement éducatif africain <i class="bx bx-check"></i></p>
                     
-                          <a href="" class="btn btn-default cta-more col-md-3">En savoir plus sur Altéa Code</a>
+                          <a href="apropos.html" class="btn btn-default cta-more col-md-3">En savoir plus sur Altéa Code</a>
                     
                       
                     </div>
@@ -243,10 +249,7 @@
               </div> -->
 
                   </div>
-            </div>
-            
-             
-              
+            </div>   
             </p>
         </div>
       </div>
@@ -273,12 +276,74 @@
    </section>
    <!-- Fin Section nos réalisations -->
 
+   <!--Section support client-->
+
+  <section id="support-client" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 class="text-center">Disponibilité d'Altea Tech Group <span class="borderLine"></span></h2>
+        <div class="col-md-5 col-xs-12"><img src="src/img/support-client.jpg" class="img-apropos img-responsive" style="border-radius: 10px;" alt=""></div>
+        <div class="col-md-6">
+          
+          <p>Altéa Tech group s'engage à être toujours à l'écoute et disponible pour ses partenaires, clients et personnalisé, accessible via plusieurs canaux
+            (téléphone, email, messagerie instantanée).
+          </p>
+          <p>Nous mettons en place des services de maintenance et d'assistance technique 24/7 pour garantir la continuité des solutions déployées,
+            notamment dans les secteurs critiques comme la santé et l'éducation.
+          </p>
+          <p>
+            Grâce à une organisation agile et des outils de suivi performants, nous répondons rapidement à toute demande ou incident.
+            <br>
+            Être disponible pour nos clients, c'est notre priorité afin d'assurer leur succès et une collaboration durable.
+            <div class="cta-container">
+                <a href="contact.html"  class="btn btn-success">Contactez-nous <li class="bx bx-message"></li></a>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+   <!--Fin support client-->
+
+   <!--Section réolution problème-->
+    <section id="resolu-prob" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 class="text-center">Résolution de problème chez Altea Tech Group <span class="borderLine"></span></h2>
+        <div class="col-md-5 col-xs-12 col-md-push-6"><img src="src/img/equipe-brainstorming.jpg" class="img-apropos img-responsive" style="border-radius: 10px;" alt=""></div>
+        <div class="col-md-6 col-md-pull-5">
+          
+          <p>Chez Altéa Tech group, nous abordons la résolution de problèmes avec rigueur, créativité et agilité.
+          </p>
+          <p>Chaque défi est analysé en profondeur pour en comprendre les causes fondamentales, en impliquant les parties prenantes concernées.
+          </p>
+          <p>
+            Nous privilégions une démarche collaborative, mêlant expertise technologique et connaissance terrain, afin de co-construire des solutions durables
+            et adaptées.
+            <br>
+            Grâce à nos filières spécialisées, nous mobilisons des outils innovants - intelligence artificielle, data analytics, plateformes numériques pour 
+            anticiper, diagnostiquer et répondre efficacement aux besoins.
+            <div class="cta-container">
+                <a href="contact.html"  class="btn btn-success">Contactez-nous <li class="bx bx-message"></li></a>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Fin section résolution problème-->
+
+  
    <!-- ======= Section temoignage ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2 class="text-center">Témoignage <span class="borderLine"></span></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -304,13 +369,14 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <img src="src/img/Beni-Ngoma.jpeg" class="testimonial-img" alt="">
+                  <h3>Beni Ngoma</h3>
+                  <h4>Analyste en cybersécurité, USA</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    J’ai été impressionné par la qualité des solutions offertes par Altéa Tech Numérique. 
+                    Leur professionnalisme et leur sens de l’innovation répondent parfaitement
+                     aux besoins actuels du numérique. C’est un service que je recommande vivement
                   </p>
                 </div>
               </div>
@@ -319,28 +385,14 @@
              <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <img src="src/img/Noella-Kizubanata.jpeg" class="testimonial-img" alt="">
+                  <h3>Noella Kizubanata</h3>
+                  <h4>Cuso International</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- Fin item temoignage -->
-
-             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    Altéa Tech Numérique apporte un souffle nouveau dans le digital. Leur créativité et 
+                    leur engagement à proposer des solutions pratiques 
+                    et accessibles font toute la différence. Je suis ravie d’avoir découvert leurs services
                   </p>
                 </div>
               </div>
@@ -356,61 +408,64 @@
   <section id="equipe" class="bg-light py-5">
     <div class="container-fluid">
       <div class="row">
-            <div class="col-xs-0 col-xs-push-0 col-xs-offset-0 col-sm-10 col-sm-push-1 col-md-10 col-md-offset-0 team" data-aos="fade-up">
+            <div class="team" data-aos="fade-up">
                 <h2 class="text-center">Équipe <span class="borderLine"></span></h2>
-              <div class="team-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        
-                            <div class="offre">
-                              <img src="src/img/winner.jpg" class="img-responsive" alt="">
+                  
+                            <div class="offre col-md-3">
+                              <img src="src/img/CeoJoanne.jpg" class="img-responsive" alt="">
                               <div class="more text-center">
                                   <h4>Joanne Kizubanata</h4>
-                                  <p>Ceo.</p>            
+                                  <p>Ceo</p>            
                               </div>
-                          
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
+                            </div>
                         
-                            <div class="offre">
-                              <img src="src/img/winner.jpg" class="img-responsive" alt="">
+                            <div class="offre col-md-3">
+                              <img src="src/img/utilisateur (1).png" class="img-responsive" alt="">
                               <div class="more text-center">
-                                  <h4>Joanne Kizubanata</h4>
-                                  <p>Ceo.</p>            
+                                  <h4>---</h4>
+                                  <p>Cto</p>            
                               </div>
                          
                           </div>
-                    </div>
-
-                    <div class="swiper-slide">
                         
-                            <div class="offre">
-                              <img src="src/img/winner.jpg" class="img-responsive" alt="">
+                            <div class="offre col-md-3">
+                              <img src="src/img/utilisateur (1).png" class="img-responsive" alt="">
                               <div class="more text-center">
-                                  <h4>Joanne Kizubanata</h4>
-                                  <p>Ceo.</p>            
+                                  <h4>---</h4>
+                                  <p>Tpm</p>            
                               </div>
                           </div>
-                        
-                    </div>
 
-                    
-                        <div class="swiper-slide">
-                            <div class="offre">
+                            <div class="offre col-md-3">
                               <img src="src/img/winner.jpg" class="img-responsive" alt="">
                               <div class="more text-center">
-                                  <h4>Joanne Kizubanata</h4>
-                                  <p>Ceo.</p>            
+                                  <h4>Winner Kapela</h4>
+                                  <p>Lead Dev Web</p>            
                               </div>
                           </div>
-                        </div>
-                    
-                  </div>
-                   <div class="swiper-pagination"></div>
-              </div>
-            </div>
+                          <div class="offre col-md-3">
+                              <img src="src/img/utilisateur (1).png" class="img-responsive" alt="">
+                              <div class="more text-center">
+                                  <h4>---</h4>
+                                  <p>Resp. Relation Extérieure</p>            
+                              </div>
+                          </div>
+                          <div class="offre col-md-3">
+                              <img src="src/img/utilisateur (1).png" class="img-responsive" alt="">
+                              <div class="more text-center">
+                                  <h4>---</h4>
+                                  <p>CM</p>            
+                              </div>
+                          </div>
+                          <div class="offre col-md-3">
+                              <img src="src/img/utilisateur (1).png" class="img-responsive" alt="">
+                              <div class="more text-center">
+                                  <h4>---</h4>
+                                  <p>Dev</p>            
+                              </div>
+                          </div>
+                  
+                </div>
         </div>
     </div>
   </section>
@@ -425,20 +480,20 @@
           <div class="col-lg-3 col-md-4 col-sm-4 footer-contact">
             <a href=""><img src="src/img/logo Altéa Tech Group.p" alt=""></a>
             <p>
-              <!-- A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p> -->
+             
+              Kinshasa,DRC<br>
+              <strong>Phone:</strong> +240 000 000 000<br>
+              <strong>Email:</strong> alteanumerique1@gmail.com<br>
+            </p>
           </div>
 
           <div class="col-lg-2 col-md-4 col-sm-12 footer-links">
             <h4>Useful Links</h4>
             <ul class="col-sm-10">
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Accueil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Apropos de nous</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Accueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="apropos.html">Apropos de nous</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
@@ -463,26 +518,22 @@
         <div class="copyright">
           &copy; Copyright <strong><span>Altéa Tech Group</span></strong>. Tout droits réservés
         </div>
-        <div class="credits">
-      </div>
       <div class="social-links text-center text-md-end pt-3 pt-md-0">
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- Fin Footer -->
   
  </div>
- <!--Jquery bootstrap plugins depend de ceci-->
 
- <script src="src/bootstrap.min.js"></script>
+
+
+ <script src="src/js/bootstrap.min.js"></script>
    <script src="src/js/swiper-bundle.min.js"></script>
  <script src="src/js/jquery-3.6.4.min.js"></script>
  <script src="src/js/script.js"></script>
  <script src="src/aos/aos.js"></script>
 
- <script>
- </script>
 </body>
 </html>
